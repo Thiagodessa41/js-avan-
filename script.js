@@ -1,22 +1,21 @@
-// map percorrer um array
+//find buscar algo ele vai devolver primeiro item que encontrar
+/*let listagem = [5, 3, 'jose', 2, 'thiago'];
 
-/*let lista =['Matheus', 'jose', 'Maria'];
-
-lista.map((item, index)=>{
-    console.log(`Passando: ${item} - Esta na posição ${index}`)
-})*/
-
-
-//reduce reduzir um array
-/*let numeros= [5,3,2,6,8];
-
-let total = numeros.reduce((acumulador, numero,indice, original)=>{
-    console.log(`${acumulador} -Total ate o momento`);
-    console.log(`${numero} -valor atual`);
-    console.log(`${indice} -indice atual`);
-    console.log(`${original}- array original`);
-    console.log('===========================');
-    return acumulador += numero;
+let busca = listagem.find((item)=>{
+    if(item === 'jose'){
+    return console.log ('item encontrado com sucesso' ) 
+    }
 })
 
-console.log('total do reduce: ' + total);*/
+console.log(busca); // se tiver jose ira retornar senao undefined*/
+
+
+
+//filter filtrar algo
+let palavras = ['matheus', 'ricardo', 'ana', 'carla', 'jose'];
+
+let resultado = palavras.filter((filter)=>{
+    return item.length <= 4;
+})
+
+console.log(resultado);

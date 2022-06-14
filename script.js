@@ -1,38 +1,38 @@
-//objetos
-
-/*let pessoa ={
-    nome:'Thiago',
-    sobrenome: 'Camargo',
-    empresa: 'Novadev',
-    cargo: 'Fullstack'
-};
-
-//console.log (pessoa.nome);
-//console.log (pessoa.cargo);
-
-
-//descontruindo objeto
-//nome:nomePessoa renomeando nome da propriedade
-const {nome:nomePessoa, cargo} = pessoa;
-*/
+// spread operator
+let primeiros = [1, 2, 3];
 
 
 
-
-// desconstruir um array
-let nomes = [
-    'Matheus',
-    'Lucas',
-    'Carlos',
-    'Pedro'
-];
-// desconstruir  passa a posicao e o nome da propriedade
-//let {0:matheus } = nomes;
+//para juntar arrays os tres pontos faz isso
+/*let numeros = [...primeiros, 4, 5, 6];
+console.log(numeros);*/
 
 
-//outra maneira desconstrucao
-let [primeironome, segundonome] = nomes;
 
-console.log(primeironome);
-console.log(segundonome);
+//vamos fazer a mesma coisa com objetos
+/*let pessoa = {
+    nome: 'thiago',
+    sobrenome: 'camargo',
+    idade: 39
+}
+
+let novapessoa = {
+    ...pessoa,
+    status: 'ativo',
+    cidade: 'americana'
+}
+
+ console.log(novapessoa);*/
+
+ function novoUsuario (info){
+     let data = {
+         ...info, 
+         status: 'ativo',
+         inicio: '20/03/2023',
+         codigo: '123123'
+     };
+     console.log(data);
+ }
+
+ novoUsuario({nome: 'josé', sobrenome: 'silva', cargo: 'dev' })
 

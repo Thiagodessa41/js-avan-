@@ -1,38 +1,21 @@
-// spread operator
-let primeiros = [1, 2, 3];
+// rest Operator
+// coloque os tres pontos ira exibir todos nomes
 
-
-
-//para juntar arrays os tres pontos faz isso
-/*let numeros = [...primeiros, 4, 5, 6];
-console.log(numeros);*/
-
-
-
-//vamos fazer a mesma coisa com objetos
-/*let pessoa = {
-    nome: 'thiago',
-    sobrenome: 'camargo',
-    idade: 39
+/*function convidados(...nomes){
+    console.log('Seja todos bem vindos todos os convida')
+    console.log(nomes);
 }
 
-let novapessoa = {
-    ...pessoa,
-    status: 'ativo',
-    cidade: 'americana'
+convidados('Matheus', 'Lucas', 'Maria')*/
+
+
+function sorteador(...numeros){
+    console.log(numeros);
+    //Math.floor garante resultado numero inteiro
+    //random() numero aleatorio
+    //length tamanho do array
+    const numeroGerado = Math.floor(random() * numeros.length);
+    console.log(numeros[numeroGerado]);
 }
 
- console.log(novapessoa);*/
-
- function novoUsuario (info){
-     let data = {
-         ...info, 
-         status: 'ativo',
-         inicio: '20/03/2023',
-         codigo: '123123'
-     };
-     console.log(data);
- }
-
- novoUsuario({nome: 'josé', sobrenome: 'silva', cargo: 'dev' })
-
+sorteador(11,53,54,15,76,97,16)
